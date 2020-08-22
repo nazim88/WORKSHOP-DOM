@@ -17,5 +17,8 @@ if (email.value === correctEmail && pass.value === correctPass) {
     right.classList.toggle("none") 
 } else {
     h5.classList.toggle("fail") 
+    setTimeout(()=>{
+        h5.innerHTML = "";
+    },4000);
 }
 }
